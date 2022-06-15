@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" modified="2022-06-16T01:17:50.427Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36" etag="3h7fOWRAWqI6COikgxtB" version="20.0.1" type="github">
+  <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
+    <mxGraphModel dx="1055" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-1" value="Python &#xa;Application" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="80" width="200" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-5" value="Resource" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="80" width="200" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="User login&#xa;User consent &#xa;to scope" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
+          <mxGeometry x="48.75" y="115" width="102.5" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="fUd4TUb26CEdviJzKCYO-3" value="3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry x="40" y="110" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-8" value="2. Send user to authentication server" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;exitX=0.5;exitY=0.332;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="240" as="sourcePoint" />
+            <mxPoint x="610" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-9" value="4. Redirect with authorization code" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;exitX=-0.007;exitY=0.963;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" target="3nuBFxr9cyL0pnOWT2aG-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="160" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fUd4TUb26CEdviJzKCYO-1" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-3" value="1. trigger action with application" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="1" edge="1" source="fUd4TUb26CEdviJzKCYO-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="110" as="sourcePoint" />
+            <mxPoint x="305" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fUd4TUb26CEdviJzKCYO-4" value="5. Exchange authorization code for token" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="1" source="3nuBFxr9cyL0pnOWT2aG-1" target="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="244.79999999999995" as="sourcePoint" />
+            <mxPoint x="620" y="245" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fUd4TUb26CEdviJzKCYO-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.495;exitY=0.691;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="1" source="3nuBFxr9cyL0pnOWT2aG-5" target="3nuBFxr9cyL0pnOWT2aG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="450" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fUd4TUb26CEdviJzKCYO-6" value="6. Returns OAuth token" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="fUd4TUb26CEdviJzKCYO-5">
+          <mxGeometry x="0.3448" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fUd4TUb26CEdviJzKCYO-7" value="7. Make API call to protected resource" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="1" source="3nuBFxr9cyL0pnOWT2aG-1" target="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="420" as="sourcePoint" />
+            <mxPoint x="550" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fUd4TUb26CEdviJzKCYO-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.495;exitY=0.889;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="1" source="3nuBFxr9cyL0pnOWT2aG-5" target="3nuBFxr9cyL0pnOWT2aG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="669" y="414.77" as="sourcePoint" />
+            <mxPoint x="319.5" y="414.77" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fUd4TUb26CEdviJzKCYO-9" value="8. Response" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="fUd4TUb26CEdviJzKCYO-8">
+          <mxGeometry x="0.3448" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
